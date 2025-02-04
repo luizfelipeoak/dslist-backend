@@ -17,11 +17,9 @@ import com.felipedev.dslist.services.GameService;
 @RequestMapping(value = "/lists")
 public class GameListController {
 	
-	@Autowired
-	private GameListService gameListService;
+	@Autowired private GameListService gameListService;
 	
-	@Autowired
-	private GameService gameService;
+	@Autowired private GameService gameService;
 
 	@GetMapping
 	public List<GameListDTO> findAll() {
